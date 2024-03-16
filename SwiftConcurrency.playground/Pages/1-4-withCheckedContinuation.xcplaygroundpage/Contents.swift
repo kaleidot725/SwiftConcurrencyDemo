@@ -51,7 +51,7 @@ func request(with urlString: String, complecationHandler: @escaping (Result<Stri
 }
 
 func newAsyncRequest(with urlString: String) async throws -> String {
-    return try await withCheckedContinuation { continuation in
+    return try await withCheckedThrowingContinuation { continuation in
         request(with: urlString) { result in
             continuation.resume(with: result)
         }
