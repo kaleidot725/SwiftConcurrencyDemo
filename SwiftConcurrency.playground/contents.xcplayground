@@ -2,6 +2,8 @@
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
         <page name='1-1-request-with-closure'/>
-        <page name='1-2-request-with-async.xcplaygroundpage'/>
+        <page name='1-2-request-with-async'/>
+        <page name='1-3-async-await-syntax'/>
+        <page name='1-4-withCheckedContinuation'/>
     </pages>
 </playground>
