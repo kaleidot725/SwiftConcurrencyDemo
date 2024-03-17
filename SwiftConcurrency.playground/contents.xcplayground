@@ -5,5 +5,8 @@
         <page name='1-2-request-with-async'/>
         <page name='1-3-async-await-syntax'/>
         <page name='1-4-withCheckedContinuation'/>
+        <page name='2-1-data-race'/>
+        <page name='2-2-serial-dispatch-queue'/>
+        <page name='2-3-actor'/>
     </pages>
 </playground>
