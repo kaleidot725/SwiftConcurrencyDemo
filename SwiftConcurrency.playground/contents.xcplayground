@@ -8,5 +8,6 @@
         <page name='2-1-data-race'/>
         <page name='2-2-serial-dispatch-queue'/>
         <page name='2-3-actor'/>
+        <page name='2-4-actor-syntax'/>
     </pages>
 </playground>
