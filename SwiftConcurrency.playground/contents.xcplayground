@@ -9,5 +9,6 @@
         <page name='2-2-serial-dispatch-queue'/>
         <page name='2-3-actor'/>
         <page name='2-4-actor-syntax'/>
+        <page name='2-5-actor-await'/>
     </pages>
 </playground>
