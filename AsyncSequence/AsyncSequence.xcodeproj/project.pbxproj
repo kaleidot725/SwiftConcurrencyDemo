@@ -14,6 +14,8 @@
 		CA15B39A2BAA6826008A34D0 /* AsyncSequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA15B3992BAA6826008A34D0 /* AsyncSequenceTests.swift */; };
 		CA15B3A42BAA6826008A34D0 /* AsyncSequenceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA15B3A32BAA6826008A34D0 /* AsyncSequenceUITests.swift */; };
 		CA15B3A62BAA6826008A34D0 /* AsyncSequenceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA15B3A52BAA6826008A34D0 /* AsyncSequenceUITestsLaunchTests.swift */; };
+		CA15B3B42BAA6A30008A34D0 /* UserAPIsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA15B3B32BAA6A30008A34D0 /* UserAPIsView.swift */; };
+		CA15B3B62BAA708A008A34D0 /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA15B3B52BAA708A008A34D0 /* text.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		CA15B39F2BAA6826008A34D0 /* AsyncSequenceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncSequenceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA15B3A32BAA6826008A34D0 /* AsyncSequenceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSequenceUITests.swift; sourceTree = "<group>"; };
 		CA15B3A52BAA6826008A34D0 /* AsyncSequenceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSequenceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA15B3B32BAA6A30008A34D0 /* UserAPIsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIsView.swift; sourceTree = "<group>"; };
+		CA15B3B52BAA708A008A34D0 /* text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,12 @@
 		CA15B3872BAA6825008A34D0 /* AsyncSequence */ = {
 			isa = PBXGroup;
 			children = (
+				CA15B3B52BAA708A008A34D0 /* text.txt */,
 				CA15B3882BAA6825008A34D0 /* AsyncSequenceApp.swift */,
 				CA15B38A2BAA6825008A34D0 /* ContentView.swift */,
 				CA15B38C2BAA6826008A34D0 /* Assets.xcassets */,
 				CA15B38E2BAA6826008A34D0 /* Preview Content */,
+				CA15B3B32BAA6A30008A34D0 /* UserAPIsView.swift */,
 			);
 			path = AsyncSequence;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA15B3902BAA6826008A34D0 /* Preview Assets.xcassets in Resources */,
+				CA15B3B62BAA708A008A34D0 /* text.txt in Resources */,
 				CA15B38D2BAA6826008A34D0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA15B38B2BAA6825008A34D0 /* ContentView.swift in Sources */,
+				CA15B3B42BAA6A30008A34D0 /* UserAPIsView.swift in Sources */,
 				CA15B3892BAA6825008A34D0 /* AsyncSequenceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
