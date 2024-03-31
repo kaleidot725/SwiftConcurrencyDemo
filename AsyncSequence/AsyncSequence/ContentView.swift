@@ -5,7 +5,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        UserAPIsView()
+        NavigationView {
+            List {
+                NavigationLink("APIを使う") {
+                    UserAPIsView()
+                }
+                NavigationLink("自分で作る") {
+                    CustomAsyncSequence()
+                }
+            }
+        }
     }
 }
 

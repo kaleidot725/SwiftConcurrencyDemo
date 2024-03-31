@@ -16,6 +16,7 @@
 		CA15B3A62BAA6826008A34D0 /* AsyncSequenceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA15B3A52BAA6826008A34D0 /* AsyncSequenceUITestsLaunchTests.swift */; };
 		CA15B3B42BAA6A30008A34D0 /* UserAPIsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA15B3B32BAA6A30008A34D0 /* UserAPIsView.swift */; };
 		CA15B3B62BAA708A008A34D0 /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA15B3B52BAA708A008A34D0 /* text.txt */; };
+		CA8562DE2BB8F7A300860587 /* CustomAsyncSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8562DD2BB8F7A300860587 /* CustomAsyncSequence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CA15B3A52BAA6826008A34D0 /* AsyncSequenceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSequenceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CA15B3B32BAA6A30008A34D0 /* UserAPIsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPIsView.swift; sourceTree = "<group>"; };
 		CA15B3B52BAA708A008A34D0 /* text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
+		CA8562DD2BB8F7A300860587 /* CustomAsyncSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncSequence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				CA15B38C2BAA6826008A34D0 /* Assets.xcassets */,
 				CA15B38E2BAA6826008A34D0 /* Preview Content */,
 				CA15B3B32BAA6A30008A34D0 /* UserAPIsView.swift */,
+				CA8562DD2BB8F7A300860587 /* CustomAsyncSequence.swift */,
 			);
 			path = AsyncSequence;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			files = (
 				CA15B38B2BAA6825008A34D0 /* ContentView.swift in Sources */,
 				CA15B3B42BAA6A30008A34D0 /* UserAPIsView.swift in Sources */,
+				CA8562DE2BB8F7A300860587 /* CustomAsyncSequence.swift in Sources */,
 				CA15B3892BAA6825008A34D0 /* AsyncSequenceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
