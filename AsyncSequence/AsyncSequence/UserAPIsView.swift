@@ -41,27 +41,25 @@ final class UserAPIsViewModel: ObservableObject {
     var enterBackgroundTask: Task<Void, Never>?
     
     func checkAppStatus() {
-        lagacyObserve()
         let notificationCenter = NotificationCenter.default
         enterForegroundTask = Task {
+            // Foregroundになったときの通知を受け取る、ObserveするのはTask内部でやるので、Taskを作成して終わったら破棄する
+            // 今まではaddObserverを利用していたが、このようにfor await inで書くとaddObserverが必要なくなるので、Taskのキャンセルで対応する
             let willEnterForeground = notificationCenter.notifications(named: UIApplication.willEnterForegroundNotification)
             for await notification in willEnterForeground {
-                print(notification)
+                // FOREGROUND name = UIApplicationWillEnterForegroundNotification, object = Optional(<_TtC7SwiftUIP33_ACC2C5639A7D76F611E170E831FCA49118SwiftUIApplication: 0x103f065c0>), userInfo = nil
+                print("FOREGROUND \(notification)")
             }
         }
         
         enterBackgroundTask = Task {
+            // Backgroundになったときの通知を受け取る、ObserveするのはTask内部でやるので、Taskを作成して終わったら破棄する
+            // 今まではaddObserverを利用していたが、このようにfor await inで書くとaddObserverが必要なくなるので、Taskのキャンセルで対応する
             let didEnterBackground = notificationCenter.notifications(named: UIApplication.didEnterBackgroundNotification)
             for await notification in didEnterBackground {
-                print(notification)
+                // BACKGROUND name = UIApplicationDidEnterBackgroundNotification, object = Optional(<_TtC7SwiftUIP33_ACC2C5639A7D76F611E170E831FCA49118SwiftUIApplication: 0x103f065c0>), userInfo = nil
+                print("BACKGROUND \(notification)")
             }
-        }
-    }
-    
-    func lagacyObserve() {
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: nil) { notification in
-            print("\(notification)")
         }
     }
     
