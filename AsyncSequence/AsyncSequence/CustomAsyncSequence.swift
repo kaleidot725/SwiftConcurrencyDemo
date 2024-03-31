@@ -34,7 +34,7 @@ struct CustomAsyncSequence: View {
             }
             
             Button {
-                filterManager.showFilteredImagers(image: UIImage(named: "mac")!)
+                filterManager.showFilteredImages(image: UIImage(named: "mac")!)
             } label: {
                 Text("画像フィルター開始")
             }
@@ -54,10 +54,13 @@ struct CustomAsyncSequence: View {
 
 struct Counter {
     struct AsyncCounter: AsyncSequence {
+        // 型を決める
         typealias Element = Int
         let amount: Int
         
-        struct AsyncIterator: AsyncIteratorProtocol {
+        // Iteratorでどのように数値を返すのか決める
+        // 総計が0になったら、nilを返して終了する
+        struct AsyncIterator: AsyncIteratorProtocol { //
             var amount: Int
             mutating func next() async -> Element? {
                 guard amount >= 0 else {
@@ -70,11 +73,14 @@ struct Counter {
             }
         }
         
+        // 実装したIteratorを生成して返す
         func makeAsyncIterator() -> AsyncIterator {
             return AsyncIterator(amount: amount)
         }
     }
-    
+
+    // CounterにあるAsyncCounterを生成して返す
+    // AsyncCounterはawait for inを使えるので使ってループする
     func countdown(amount: Int) -> AsyncCounter {
         return AsyncCounter(amount: amount)
     }
@@ -83,12 +89,16 @@ struct Counter {
 @MainActor
 final class FilterImageManager: ObservableObject {
     struct ImageFilter: AsyncSequence {
+        // UIImageを返すAsyncSequenceを作成する
         typealias Element = UIImage
         let image: UIImage
-        
+
+        // UIImageを返すAsyncIteratorProtcolを作成する
         struct AsyncIterator: AsyncIteratorProtocol {
             var counter = 2
             let image: UIImage
+            
+            // Counterによってフィルターを変えながらUIImageを返す
             mutating func next() async -> Element? {
                 guard counter >= 0 else {
                     return nil
@@ -155,7 +165,7 @@ final class FilterImageManager: ObservableObject {
         return await task.value
     }
     
-    func showFilteredImagers(image: UIImage) {
+    func showFilteredImages(image: UIImage) {
         Task(priority: .low) {
             images = await filterImage(image: image)
         }
