@@ -34,7 +34,7 @@ struct CustomAsyncSequence: View {
             }
             
             Button {
-                filterManager.showFilteredImages(image: UIImage(named: "mac")!)
+                filterManager.showFilteredImages(image: UIImage(named: "sample")!)
             } label: {
                 Text("画像フィルター開始")
             }

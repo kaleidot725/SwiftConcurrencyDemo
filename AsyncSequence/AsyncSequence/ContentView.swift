@@ -13,6 +13,9 @@ struct ContentView: View {
                 NavigationLink("自分で作る") {
                     CustomAsyncSequence()
                 }
+                NavigationLink("AsyncSteam") {
+                    AsyncStreamView()
+                }
             }
         }
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA158A272BCA4936009B9D9D /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = CA158A262BCA4936009B9D9D /* sample.png */; };
 		CA15B3892BAA6825008A34D0 /* AsyncSequenceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA15B3882BAA6825008A34D0 /* AsyncSequenceApp.swift */; };
 		CA15B38B2BAA6825008A34D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA15B38A2BAA6825008A34D0 /* ContentView.swift */; };
 		CA15B38D2BAA6826008A34D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA15B38C2BAA6826008A34D0 /* Assets.xcassets */; };
@@ -18,7 +19,6 @@
 		CA15B3B62BAA708A008A34D0 /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA15B3B52BAA708A008A34D0 /* text.txt */; };
 		CA7E8CC52BBAF82A003716ED /* AsyncStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7E8CC42BBAF82A003716ED /* AsyncStream.swift */; };
 		CA8562DE2BB8F7A300860587 /* CustomAsyncSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8562DD2BB8F7A300860587 /* CustomAsyncSequence.swift */; };
-		CA8562E02BB945E500860587 /* mac.png in Resources */ = {isa = PBXBuildFile; fileRef = CA8562DF2BB945E500860587 /* mac.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA158A262BCA4936009B9D9D /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = SOURCE_ROOT; };
 		CA15B3852BAA6825008A34D0 /* AsyncSequence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncSequence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA15B3882BAA6825008A34D0 /* AsyncSequenceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSequenceApp.swift; sourceTree = "<group>"; };
 		CA15B38A2BAA6825008A34D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,7 +54,6 @@
 		CA15B3B52BAA708A008A34D0 /* text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
 		CA7E8CC42BBAF82A003716ED /* AsyncStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStream.swift; sourceTree = "<group>"; };
 		CA8562DD2BB8F7A300860587 /* CustomAsyncSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncSequence.swift; sourceTree = "<group>"; };
-		CA8562DF2BB945E500860587 /* mac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mac.png; path = ../../../../Downloads/mac.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 		CA15B37C2BAA6825008A34D0 = {
 			isa = PBXGroup;
 			children = (
-				CA8562DF2BB945E500860587 /* mac.png */,
+				CA158A262BCA4936009B9D9D /* sample.png */,
 				CA15B3872BAA6825008A34D0 /* AsyncSequence */,
 				CA15B3982BAA6826008A34D0 /* AsyncSequenceTests */,
 				CA15B3A22BAA6826008A34D0 /* AsyncSequenceUITests */,
@@ -249,7 +249,7 @@
 				CA15B3902BAA6826008A34D0 /* Preview Assets.xcassets in Resources */,
 				CA15B3B62BAA708A008A34D0 /* text.txt in Resources */,
 				CA15B38D2BAA6826008A34D0 /* Assets.xcassets in Resources */,
-				CA8562E02BB945E500860587 /* mac.png in Resources */,
+				CA158A272BCA4936009B9D9D /* sample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AsyncSequence/Preview Content\"";
+				DEVELOPMENT_TEAM = XGDBHDGVZG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -470,6 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AsyncSequence/Preview Content\"";
+				DEVELOPMENT_TEAM = XGDBHDGVZG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
